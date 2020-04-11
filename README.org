@@ -1,0 +1,30 @@
+#+TITLE: xvbell -- Flash X screen from command line.
+#+AUTHOR: Yoshinari Nomura
+#+OPTIONS: H:3 num:2 toc:nil
+#+OPTIONS: ^:nil @:t \n:nil ::t |:t f:t TeX:t
+#+OPTIONS: skip:nil
+#+OPTIONS: author:t
+#+OPTIONS: email:nil
+#+OPTIONS: creator:nil
+#+OPTIONS: timestamp:nil
+#+OPTIONS: timestamps:nil
+#+OPTIONS: d:nil
+#+OPTIONS: tags:t
+
+* xvbell
+  Flash X screen from command line.
+
+* Compile
+  #+begin_src shell-script
+    gcc -Wall -o xvbell xvbell.c -lX11
+  #+end_src
+
+* Usage
+  #+begin_src shell-script
+    xvbell [color_name]
+  #+end_src
+
+* Example
+  #+begin_src shell-script
+    xvbell green
+  #+end_src
